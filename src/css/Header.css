@@ -1,0 +1,48 @@
+.custom-link {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.custom-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #ffd700;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Hover cho link bình thường */
+.custom-link:hover {
+  color: #fff !important;
+}
+
+.custom-link:hover::after {
+  width: 100%;
+}
+
+/* Active giữ nguyên màu vàng và gạch dưới */
+.active-link {
+  color: #ffd700 !important;
+}
+
+.active-link::after {
+  width: 100%;
+  left: 0;
+  transform: none;
+}
+
+/* Khi link active thì hover sẽ không thay đổi gì */
+.active-link:hover {
+  color: #ffd700 !important;
+}
+
+.active-link:hover::after {
+  width: 100%;
+  left: 0;
+  transform: none;
+}
