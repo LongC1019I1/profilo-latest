@@ -17,6 +17,46 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.about-img-wrapper {
+  background: #ffcc00; /* màu vàng tròn */
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-title {
+  z-index: 1;
+}
+
+.about-bg-text {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 80px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: -1;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ffb300;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
