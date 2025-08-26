@@ -1,7 +1,10 @@
 #root {
   margin: 0 auto;
   width: 100%;
-  text-align: center;
+}
+
+body {
+  font-size: 20px;
 }
 
 .logo {
@@ -57,25 +60,101 @@
 .btn-warning:hover {
   background-color: #ffb300;
 }
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* SKILL */
+.skills-title {
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.skills-bg-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+  font-size: 80px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: -1;
 }
 
-.card {
-  padding: 2em;
+.skill-progress {
+  height: 6px;
+  background-color: #333;
+  border-radius: 5px;
 }
 
-.read-the-docs {
-  color: #888;
+.skill-progress .progress-bar {
+  border-radius: 5px;
+}
+
+/* RESUME */
+.resume-title {
+  z-index: 1;
+}
+
+.resume-bg-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+  font-size: 80px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: -1;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  margin: auto;
+  max-width: 900px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 289px;
+  width: 2px;
+  height: 100%;
+  background: #333;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-left {
+  width: 220px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.timeline-icon {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  color: #ffcc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 25px;
+}
+
+.timeline-right {
+  flex: 1;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.underline {
+  height: 2px;
+  width: 30px;
+  background-color: #ffcc00;
+  margin-top: 5px;
 }
